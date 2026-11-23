@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Vhui: graphical USB server",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Vhui.Server/bin/Debug/net10.0-windows/Vhui.Server.exe",
+      "cwd": "${workspaceFolder}",
+      "env": {"DOTNET_ROOT": "${workspaceFolder}/.tools/dotnet"},
+      "console": "internalConsole"
+    },
+    {
+      "name": "vhusbd: inspect source image (C#)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/Vhui.Recovery/bin/Debug/net10.0/Vhui.Recovery.exe",
+      "cwd": "${workspaceFolder}",
+      "args": ["inspect", "${workspaceFolder}/../analysis/recovered/vhusbdwinw64.exe"],
+      "env": {"DOTNET_ROOT": "${workspaceFolder}/.tools/dotnet"},
+      "console": "internalConsole"
+    }
+  ]
+}

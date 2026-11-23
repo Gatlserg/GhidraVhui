@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+.tools/
+artifacts/
+.vs/
+*.user
+*.suo
+**/__pycache__/
+**/usb-leases/
+server.ini
+certs/
+*.pfx
+*.p12
+*.key
+scripts/__pycache__/
